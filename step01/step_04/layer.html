@@ -11,14 +11,14 @@
         #header {height:100px; background-color:#0ff;}
         /*header 끝 container 시작*/
         #container {height:auto; background-color:#d5d5d5; border-bottom: 5px solid #f00;}
-        #conteiner:after{}
         #a_side {width:30%; height:300px; background-color:#af0; float:left;}
         #b_side {width:70%; height:150px; background-color:#0a4; float:left;}
         #c_side {width:70%; height:150px; background-color:#00f; float:left;}
+        #c_side:after {clear:both;}
         /*container 끝 footer 시작*/
         #footer {height:100px; background-color:#82a;}
         /* act */
-        .clearfix {display:block; clear: both;}
+       
         
     </style>
 </head>
@@ -29,7 +29,7 @@
             <div id="a_side"><a href="#">a_side</a></div>
             <div id="b_side"><a href="#">b_side</a></div>
             <div id="c_side"><a href="#">c_side</a></div>          
-            <span class="clearfix"></span>            
+                       
         </div>  
         <div id="footer">footer</div>
     </div>
