@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="kr-Ko">
+<html lang="ko-KR">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Kiss me Bliss</title>
         <style>
           * {margin:0; padding:0;}
@@ -11,22 +11,23 @@
           /* header */
           #header {width:100%; height: 150px; background-color:#666;}
           #logo {width: 100px; height: 100px; background-color: #d2d2d2; border-radius: 10px; margin: 20px; float:left;}
-          #logoBox {width: 90px; height: 90px; margin: 10px;}
-          #Box1 {width: 45%; height: 35%; padding-top:10%; float: left; background-color: #333; color: #fff; text-align:center; font-weight: bold;}
-          #Box2 {width: 45%; height: 45%; float: left; background-color: #fff; color: #333; text-align:center;}
+          #logoBox {width: 90px; height: 90px; padding-top: 5px; padding-left: 5px;}
+          #logoBox > .box1 , .box2 {width: 50%; height: 50%; float: left; text-align: center; font-weight: bold; padding-top: 10px; box-sizing: border-box;}
+          .box1 {background-color: #333; color: #fff;}
+          .box2 {background-color: #fff; color: #333;}
           h1 {padding-top: 25px; padding-left: 5px;}
           /* gnb */
           #gnb {width: 800px; height: 70px; background-color: #dedede; margin-top: 50px; float:left;}
           #gnb ul li {width: 159px; height: 45px; color: #333; list-style: none; float: left; border-right: 1px solid #333; text-align: center; padding-top: 25px;}
           #gnb ul li:last-child {border:none;}
           #gnb a {text-decoration:none; color: #333;}
-          #gnb li:active {background-color: #4CAF50; font-weight: bold;}
-          #gnb li:hover {background-color: #fe9; font-weight: bold;}
+          #gnb > ul > li:active {background-color: #4CAF50; font-weight: bold;}
+          #gnb > ul > li:hover {background-color: #fe9; font-weight: bold;}
           /* content */
           #aBox {height: auto; background-color: #f00;}
           #a1 {width: 70%; height: 300px; background-color: #add; float: left;}
           #a2 {width: 70%; height: 300px; background-color: #dad; float: left;}
-          #a3 {width: 30%; height: 600px; background-color: #0ae; display: inline-block;}          
+          #a3 {width: 30%; height: 600px; background-color: #0ae; display: inline-block;}         
           /* footer */
           footer {width: 100%; height: 150px; background-color: #666;         
         </style>        
@@ -36,10 +37,10 @@
          <div id="header">
              <div id="logo">
                <div id="logoBox">
-                 <div id="Box1">LO</div>
-                 <div id="Box2"></div>
-                 <div id="Box2"></div>
-                 <div id="Box1">GO</div>
+                 <div class="box1">LO</div>
+                 <div class="box2">GO</div>
+                 <div class="box2">LO</div>
+                 <div class="box1">GO</div>
                </div>
              </div>
            <nav id="gnb">
