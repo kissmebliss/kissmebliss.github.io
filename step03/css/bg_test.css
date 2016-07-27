@@ -1,0 +1,11 @@
+/* bg test css*/
+.container {width: 960px; height: 500px; border: 1px solid #777; margin: 0 auto; font-size: 2em; font-weight: bold; line-height: 2em; text-align: center; background-image: url('../img/bg_test.png'); padding: 3rem; box-sizing: border-box;}
+.bgbox {background-repeat: repeat;}
+.repeat_x {background-repeat: repeat-x;}
+.repeat_y {background-repeat: repeat-y;}
+.repeat_no {background-repeat: no-repeat;}
+
+.positiion1 {background-position: center center;}
+.positiion2 {background-position: left center;}
+.positiion3 {background-position: right center;}
+.positiion4 {background-position: center top;}

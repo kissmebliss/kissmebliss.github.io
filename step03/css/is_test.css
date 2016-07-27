@@ -1,0 +1,21 @@
+/* is_test */
+
+.container {width: 500px; height: auto; margin: 0 auto;}
+h1 {text-align: center; line-height: 1.3; font-size: 1.7em; border-bottom: 1px solid #0af; margin-bottom: 0.5em;}
+.container > ul {width: 90%; margin-left: 5%; background-color: #ccc;}
+.container > ul > li {width: 120px; height: 120px; margin: 5px; float: left; box-sizing: border-box; border: 1px solid #777; padding: 0.3em; background-image: url('../img/is_test.png'); background-repeat: no-repeat; }
+
+.is_01 {background-position: -350px -120px;}
+.is_02 {background-position: -120px 0px;}
+.is_03 {background-position: -470px -120px;}
+.is_04 {background-position: -700px -250px;}
+.is_05 {background-position: -700px -375px;}
+.is_06 {background-position:  0px -120px;}
+.is_07 {background-position: -590px 0px;}
+.is_08 {background-position: -470px -250px; transition: all 0.5s;}
+.is_09 {background-position: -355px -250px; transition: all 0.5s;}
+.is_10 {background-position: -230px -250px; transition: all 0.5s;}
+
+.is_08:hover {background-position: -460px 375px;}
+.is_09:hover {background-position: -350px 375px;}
+.is_10:hover {background-position: -230px -120px;}

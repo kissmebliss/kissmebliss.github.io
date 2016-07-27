@@ -33,10 +33,11 @@ margin-bottom: 20px; box-sizing:border-box;}
 .brand_main{width: 700px; height: 40px; margin-top: 12px; float: left;}
 .brand_main >li {height: auto; float: left; margin-right: 78px;}
 .brand_main>li:last-child {margin-right: 0;}
-        
+
 .select_menu{width: 250px; height: 32px; float: right; background-color: #fff; text-indent: 10px; line-height: 32px; box-sizing: border-box; border: 1px solid #707070;}
 /* text-indent : 첫줄 들여쓰기 line-height: 줄간격, 한 줄일 경우 박스의 높이값을 주면 가운데로 배치가 된다.*/
 .brand_sel_01{margin-bottom: 5px;}
+.brand_sel_02 {position: relative; z-index: 50;} 
 .brand_sel_01 {position: relative; z-index: 100;}
 .select_menu > dt {width: 100%;height: 100%; background-color: #fff; text-transform: uppercase; font-weight: bold;}
 .select_menu > dd {width: 100%; height: 100%; background-color: #fff; text-transform: capitalize; display: none; border: inherit; border-top: 0; box-sizing: border-box;}
@@ -45,22 +46,75 @@ margin-bottom: 20px; box-sizing:border-box;}
 
 /* #container */
 #container{height:auto; margin-bottom: 20px;}
-.product {width: 100%; height:458px; margin-bottom: 10px; background-color: #ff2;}
+.product {width: 100%; height:458px; margin-bottom: 10px; }
   .main_product {width: 664px; height: 100%; float: left; overflow: hidden; background-color: #fa1;}
   .news_event {width: 326px; height: 194px; float: right; background-color: #f2f; margin-bottom: 10px;}
   .news_event > a {width: 100%; height: 100%; display: block; background-image: url("../img/con_01_02.png"); background-repeat: no-repeat; background-position: center;}
   .best_product {width: 326px; height: 255px; float: right; background-color: #acf;}
-  .best_product  > a {width: 100%; height: 100%; display: block; background-image: url('../img/con_01_03.png'); background-repeat: no-repeat; background-position: center;}
-.promotion {width: 100%; height: 280px; background-color : #f22;}
-  .reservation {}
-  .e_shop {}
-  .store_loacation {}
+  .best_product  > a {width: 100%; height: 100%; display: block; background-image: url('../img/con_01_03.png'); background-repeat: no-repeat; background-position: center; overflow: hidden;}
+.promotion {width: 100%; height: 280px;}
+.promotion_package {width: 328px; height: auto; float: left; background-repeat: no-repeat;}
+  .reservation {width: 328px; height: 146px; background-color:  #f3f; margin-bottom: 10px;}
+  .reservation > a {background-image: url('../img/con_02_01.png');}
+  .e_shop {width: 328px; height: 124px; background-color: #afa;}
+  .e_shop > a {background-image: url('../img/con_02_02.png');}
+  .store_location { width: 664px; height: 280px; background-color: #aaf; float: right;}
+  .store_location > a {background-image: url('../img/con_02_03.png');}
 
-#fnb{height:276px; background-color: #e8e8e8;}
+#fnb{height:276px; background-color: #e8e8e8; padding-top: 44px; box-sizing: border-box;}
+#fnb > .fnb_area {height: 100%; margin-right: 20px; float: left;}
+#fnb h3 {width: 100%; height: auto; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 1rem; color: #505050; letter-spacing: -.0625rem;}
+.company_store {width: 110px;}
+  .company {width: 100%; height: auto; }
+  .store {width: 100%; height: auto;}
+.com_product {width: 130px;}
+  .community {width: 100%; height: auto; }
+  .product_menu {width: 100%; height: auto;}
+.brand_menu {width: 410px; }
+.sns {width: 240px;}
+
+.fnb_area ul {width: 100%; height: auto;}
+.fnb_area ul > li {max-width: 150px; width: auto; height: 1rem; margin-bottom: 0.5rem; line-height: 1rem; font-size: 0.875rem;}
+.brand_menu > ul > li {width: 120px; text-transform: uppercase; font-size: 0.875rem; line-height: 1rem; letter-spacing: -0.03125rem; margin-right: 5px; float: left;}
+
+/*#fnb .brand_menu > ul > li > a {background-color: #3a9;}*/
+.brnad_menu > ul > li {background-image: url('../img/fnb_05.jpg');}
+
+.brand_menu 
+
+.brand_01 > a {background-position: 0 -29px;} 
+.brand_02 > a {background-position: -145px -29px;}
+.brand_03 > a {background-position: -290px -29px;}
+.brand_04 > a {background-position: 0 -53px;}
+.brand_05 > a {background-position: -145px -53px;}
+.brand_06 > a {background-position: -290px -53px;}
+.brand_07 > a {background-position: 0 -77;}
+.brand_08 > a {background-position: -145px -77px;}
+.brand_09 > a {background-position: -290px -77px;}
+.brand_10 > a {background-position: 0 -100px;}
+.brand_11 > a {background-position: -145px -100px;}
+.brand_12 > a {background-position: -290px -100px;}
+.brand_13 > a {background-position: 0 125px;}
+.brand_14 > a {background-position: -145px -125px;}
+
+.sns > ol {width: 100%; height: auto; margin-bottom: 22px;}
+.sns > ol > li {width: 20%; height: 30px; float: left;}
+.sns > ol > li > a {background-color: #afc;}
+
+.div > .sns i[class="fa"] {font-size: 2em;}
+
 
 /* footer */
-#footBox{height:80px; background-color: #707070;}
 
+#footBox{height:80px; padding: 14px 0px; box-sizing: border-box; background-color: #707070; position: relative;}
+#footBox:after {content: ""; display: block; width:100vw; height: inherit; position: absolute; top: 0; left: 50%; margin-left: -50vw; z-index: -100; background-color: inherit;}
+#footBox > h2 {width: 86px; height: 100%; float:left; background-image: url('../img/sub_logo.png'); background-repeat: no-repeat;}
+#footBox > address {width: 800px; height: 100%; color: #fff; float: left; font-style: normal; font-size: 0.8em; margin-left: 35px;}
+#footBox > address > p {line-height: 1.5626em; float: left;}
+#footBox > address > p:first-child {margin-right: 1em;}
+#footBox > address > p > a {color: inherit; border-right: 1px solid #fff; padding-right: 0.5em;}
+#footBox > address > p > a:hover {font-weight: normal; text-decoration: underline;}
+#footBox > address > p > a:last-child {border-right: 0; padding-right: 0;}
 
 
 

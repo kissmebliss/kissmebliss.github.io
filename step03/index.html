@@ -8,6 +8,8 @@
 	<link rel="apple-touch-icon" href="favicon.png">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="http://kissmebliss.dothome.co.kr/font-awsome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="..//font-awesome/css/font-awesome.min.css" />
 	<title>title_name</title>
 	<style>
 	</style>
@@ -15,7 +17,7 @@
 </head>
 <body>
 	<div class="container">
-		<header id="headBox">
+		<header id="headBox" class="back_line">
 			<h1>
 				<a href="index.html" title="우양 알앤비">
 					<img src="img/logo.png" alt="우양 알앤비" />
@@ -64,22 +66,141 @@
            1. img 코드로 작성하고 넘치는 영역을 부모 요소에서 overflow:hidden;
            2. background-img:url('이미지 경로') ccs로 처리(image, repeat-반복-, position)-->
 		    <div class="main_product">
-		      <a href="#"><img src="./img/con_01_01.png" alt=""></a></div>
-		    <div class="news_event">
-              <a href="#"><span class="hidden">NEWS &amp; EVENT</span></a>
-		    </div>
-		    <div class="best_product">
-              <a href="#"><span class="hidden">best_product</span></a>
-		    </div>
+		      <a class="con_01" href="#"><img src="./img/con_01_01.png" alt=""></a></div>
+		    <div class="news_event"><a href="#"><span class="hidden">NEWS &amp; EVENT</span></a></div>
+		    <div class="best_product"><a href="#"><span class="hidden">best_product</span></a></div>
 		  </div>
-		  <div class="promotion">
-		    <div class="reservation"></div>
-		    <div class="e_shop"></div>
-		    <div class="store_loacation"></div>
+		  <div class="promotion link">
+            <div class="promotion_package">
+              <div class="reservation"><a href="#"><span>reservation</span></a></div>
+              <div class="e_shop"><a href="#"><span>e_shop</span></a></div>
+            </div>
+                <div class="store_location"><a href="#"><span>location</span></a></div>
 		  </div>
 		</section>
-		<nav id="fnb"></nav>
-		<footer id="footBox"></footer>
+		<nav id="fnb" class="back_line">
+		  			<h2>family navigation</h2>
+			<div class="fnb_area company_store">
+				<div class="company">
+					<h3>company</h3>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">연혁</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+					</ul>
+				</div>
+				<div class="store">
+					<h3>store</h3>
+					<ul>
+						<li><a href="#">매장안내</a></li>
+						<li><a href="#">전시장예약</a></li>
+					</ul>
+				</div>
+			</div><!--// .company_store -->
+
+			<div class="fnb_area com_product">
+				<div class="community">
+					<h3>community</h3>
+					 <ul>
+					   <li>News &amp; Event</li>
+					   <li>Media</li>
+					   <li><abbr title="frequently asked questions">FAQ</abbr></li>
+					   <li><abbr title="question and answer">Q&amp;A</abbr></li>
+					 </ul>
+				</div>
+				<div class="product_menu">
+					<h3><span class="hidden">product_menu</span>goose down</h3>
+				</div>
+			</div><!--// .com_product -->
+
+			<div class="fnb_area brand_menu">
+				<h3 aria-title="brand_menu">brand</h3>
+				 <ul class="link">
+                   <li class="brand_01"><a href=""><span>bassetti</span></a></li>
+				   <li class="brand_02"><a href=""><span>abyss habidecor</span></a></li>
+				   <li class="brand_03"><a href=""><span>parentesi quadra</span></a></li>
+				   <li class="brand_04"><a href=""><span>daunenstep</span></a></li>
+				   <li class="brand_05"><a href=""><span>dauny</span></a></li>
+				   <li class="brand_06"><a href=""><span>pratesi</span></a></li>
+				   <li class="brand_07"><a href=""><span>bovi</span></a></li>
+				   <li class="brand_08"><a href=""><span>pereira da cunha</span></a></li>
+				   <li class="brand_09"><a href=""><span>dorbena</span></a></li>
+				   <li class="brand_10"><a href=""><span>cinelli</span></a></li>
+				   <li class="brand_11"><a href=""><span>christy</span></a></li>
+				   <li class="brand_12"><a href=""><span>fazzini</span></a></li>
+				   <li class="brand_13"><a href=""><span>molina</span></a></li>
+				   <li class="brand_"><a href=""><span>trumina</span></a></li>
+				 </ul>
+			</div>
+			<div class="fnb_area sns">
+				<h3>sns</h3>
+				<ol>
+                  <li>
+                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="hidden">facebook</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i><span class="hidden">youtube</span></a>
+                  </li>
+                  <li>
+                   <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i><span class="hidden">twitter</span></a>
+                   </li>
+                  <li>
+                   <a href="#"><i class="fa fa fa-instagram" aria-hidden="true"></i><span class="hidden">imstargram</span></a>
+                   </li>
+				</ol>
+			</div>
+		</nav>
+		<footer id="footBox" class="back_line">
+		  <h2><span class="hidden">우양 알앤비</span></h2>
+		  <address>
+		    <p>㈜우양알앤비 서울특별시 강남구 논현동 75-2 바세티 빌딩 <br>
+		    bassetti blog. 22. nonhyen-ro 142-gil. cangnam-gu seoul korea.
+		    </p>
+		    <p>
+		      <a href="mailto:wooyang.com" alt="">info@wooyang.com</a>
+		      <a href="tel:+82025184877">T.02.518.4877</a>
+		    </p>
+		    <p>ⓒ wooyang all rights reserved.</p>		    
+		  </address>
+		</footer>
 	</div><!--// .container -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
