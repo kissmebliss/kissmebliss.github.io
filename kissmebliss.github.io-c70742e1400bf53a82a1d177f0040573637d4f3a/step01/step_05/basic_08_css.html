@@ -1,0 +1,54 @@
+<!DOCUMENT hrml>
+<html lang="kr-KO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <title>test</title>
+        <style>
+            * {margin:0; padding:0;}
+            h1 {text-align: center; margin:0 auto; font-size:1.4em; color: #333;}
+            .container {width: 700px; height: 500px; margin:0 auto; background-color:#ccc;}
+            .container > div {width: 100px; height: 100px; float:left;}
+            #margin {background-color: #1af; margin:50px;}
+            #padding{background-color: #fa1; padding:50px;}
+            #border{background-color: #af1; border: 50px solid #369;}
+            #outline{background-color: #f1a; outline: 30px solid #30e;}
+            .clearfix {display:block; clear:both;}
+            #margin_1 {background-color: #1af; margin: 10px; transition: all 1s;} /*상, 하, 좌, 우*/
+            #margin_2 {background-color: #38c; margin: 10px 30px;} /*상하, 좌우*/
+            #margin_3 {background-color: #5ca; margin; 10px 30px 50px;} /*상, 좌/우, 하*/
+            #margin_4 {background-color: #789; margin; 10px 20px 30px 40px;} /*top부터 시계방향*/
+            #margin_5 {background-color: #9c7;}
+            #margin_6 {background-color: #a85;}
+            #margin_7 {background-color: #cc3;}
+            #margin_8 {background-color: #f81;}
+            
+            #margin_1:hover {border: 30px solid #ff9;}
+            #margin_1:active {border: 2px solid #f00;}
+        
+        </style>
+    </head>
+    <body>
+        <h1>margin, padding, border, outline</h1><br />
+        <div class="container">
+            <div id="margin">margin</div>
+            <div id="padding">padding</div>
+            <div id="border">border</div>
+            <div id="outline">outline</div>
+        </div>
+        
+        <hr size="3" with="80%"/>
+        <h2>margin_부분 변화</h2>
+        <div class="container">
+            <div id="margin_1">margin_1</div>                
+            <div id="margin_2">margin_2</div>                
+            <div id="margin_3">margin_3</div>                
+            <div id="margin_4">margin_4</div>                
+            <br class="clearfix" />
+            <div id="margin_5">margin_5</div>                
+            <div id="margin_6">margin_6</div>                
+            <div id="margin_7">margin_7</div>                
+            <div id="margin_8">margin_8</div> 
+        </div>
+    </body>
+</html>

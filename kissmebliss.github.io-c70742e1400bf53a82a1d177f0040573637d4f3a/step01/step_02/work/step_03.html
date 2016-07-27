@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta http-equiv="X-UA-Compadible" content="IE=dege" />
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {width: 80px; margin: 20px;}
+        div {border: 1px solid #d2d2d2; margin:0;}
+        #imgbox {width: 400px; height:500px;}
+        #box1 {background-color: #11a001;}
+        #box2 {background-color: #aac3fd}
+        span {color:#8a0aff}
+    </style>
+</head>
+<body>
+<div>
+    <h1>리스트</h1>
+    <h2>순서가 있는 리스트 &lt;ol&gt;</h2>
+ <div id="box1">
+    <ol>
+        <li>순서가 있는 리스트 목록_1</li>
+        <li>순서가 있는 리스트 목록_2</li>
+        <li>순서가 있는 리스트 목록_3</li>
+        <li>순서가 있는 리스트 목록_4
+            <ol>
+              <li>추가 리스트_1</li>
+              <li>추가 리스트_2</li>
+              <li title="사이트 리스트">추가 리스트_3 추가 사이트 리스트
+                <ul>
+                    <li><a href="http://www.naver.com" target="_blank" title="네이버">네이버</a></li>
+                    <li><a href="http://www.daum.net" target="_blank" title="다음">다음</a></li>
+                    <li><a href="http://www.google.com" target="_blank" title="구글">구글</a></li>
+                </ul>
+              </li>
+              <li>추가 리스트_4</li>
+              <li>추가 리스트_5</li>
+            </ol>
+        </li>
+        <li>순서가 있는 리스트 목록_5</li>
+    </ol>
+   </div>
+   <div id="box2">
+     <h2>순서가 없는 리스트 &lt;ul&gt;</h2>
+    <ul>
+        <li>순서가 없는 <span>리스트 목록</span></li>
+        <li>순서가 없는 리스트 목록</li>
+        <li>순서가 없는 리스트 목록</li>
+        <li>순서가 없는 리스트 목록</li>
+        <li>순서가 없는 리스트 목록</li> 
+    </ul>
+      <h2><span>제목,</span> 내용이 있는 리스트&lt;dl&gt;</h2>
+    <dl>
+        <dt>제목1</dt>
+            <dd>내용_1</dd>
+            <dd>내용_2</dd>
+            <dd>내용_3</dd>
+            <dd>내용_4</dd>
+        <dt>제목2</dt>
+            <dd>내용_1</dd>
+            <dd>내용_2</dd>
+            <dd>내용_3</dd>
+            <dd>내용_4</dd>
+    </dl>   
+    </div>
+    <h2>이미지 가져오기</h2>
+    <div id="imgbox">
+      <img src="./img/icon_01.png" title="home"/>
+      <img src="./img/icon_02.png" title="home2"/>
+      <img src="./img/icon_03.png" title="home3"/>
+    </div> 
+    <!-- 주석 -->
+    
+    <script></script>
+</div>
+</body>
+</html>

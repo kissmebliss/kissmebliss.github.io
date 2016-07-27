@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr-KO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>document</title>
+        <style>
+          body {height: 3000px;}
+          html, body {margin: 0; padding: 0;}
+          h1, h2, h3, h4, h5, h6, div, ul, ol, li, d1, dt, dd, table {margin: 0; color: #333;}
+          ul, ol, li {list-style: none;}
+          a {text-decoration: none; color: #777;}
+          a:hover {text-decoration : underline; color: #0ac;}
+          header, article, aside, nav, footer, section, hgroup, main {display: block;}
+          .container {width: 70vw; min-width: 700px; margin: 0 auto; padding: 1rem; background-color: #ccc; box-sizing: border-box; margin-top: 200px;}
+          .container .base .static .fixed .relative .absoloute {border-collapse: collapse;
+          h1 {color: #fff;}
+          ul {width: 100%; height: 50vh; background-color: #aaf; padding: 0;}
+          li {width: 100px; height: 100px; float :left; background-color :#0aa; border: 1px solid #333; text-align : center; line-height: 100px;}
+          .base {background-color: #fa0;}
+          .static {color: #fff; font-weight: bold; position: static; /*top: 0; left: -100px; z-index: -100;*/}
+          .fixed {position: fixed; top: 0; left: 50%; z-index: 100;}
+          .relative {position: relative; color: #fc0; font-weight: bold; top: 100px; right: 0; z-index: 50;}
+          .absolute {color: #0f2; font-size: 1.3rem; position: absolute; top: 0; left: 45%; z-index: -101;}
+          .absolute:hover {color:#fff; background-color: #fa0;}
+          .base {}
+          /* 배너 가운데 위치하기 */          
+          .add_banner {width: 20em;/* 16*20=320px */  height: 10em; padding: 1em; background-color: #fac;}
+          .add_banner > button {width: 4em; height: 2em; border: 0; cursor : pointer; background-color: transparent; color: #fff; font-weight: bold; float: right;}
+          .add_banner > h2 {color: #dfdfdf;}
+          .add_banner {position: fixed; top: 50%; left: 50%; margin-top: -5em; margin-left: -10em; z-index: 200;}
+          /* 사이드 배너*/
+          .side_banner {width: 5em; height: 30em; background-color: #00f; padding: 0.5em; box-sizing:border-box; position: fixed; left: 50%; top: 5em; z-index: 300; margin-left: 500px;}
+          
+        </style>        
+    </head>
+    <body>
+       <div class="container">
+         <h1>position 기본 이해</h1>
+         <ul>
+           <li class="base">base</li>
+           <li class="static">static</li>
+           <li class="fixed">fixed</li>
+           <li class="relative">relative</li>
+           <li class="absolute">absolute</li>
+           <li class="base">base</li>           
+         </ul>
+       </div> 
+       <div class="add_banner">
+         <button type="button">CLOSE</button>
+         <h2>banner</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repudiandae voluptatem ut totam quibusdam distinctio ratione sint fuga at, eveniet placeat voluptates aspernatur</p>
+       </div>
+       <div class="side_banner">
+         <h2>side<br />banner</h2>
+         
+       </div>
+    </body>
+</html>

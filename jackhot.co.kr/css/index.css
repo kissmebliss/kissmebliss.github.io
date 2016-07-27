@@ -1,0 +1,43 @@
+/*@import url{all/headBox.css};*/
+@import url(../myicon/font/flaticon.css);
+/* flaticon : css든 font든 실제로 사용하려면 문서를 불러오기 이전에 세팅이 되어 있어야 한다. (위치값을 불러옴.) */
+
+  
+/* color setting
+  메인 #282828
+  보조 #fff
+  보조2 # f6f6f6
+  보조3 #c0c0c0 - font color #282828 */  
+/* box shadow : 가로값, 세로값, 번짐정도(크기값) 색상(inset);*/
+  
+  
+/* indec.css*/
+    
+body {overflow-x: hidden;}
+.container {width: 960px; height: 2000px;  margin: 0 auto;}
+.container > * {width: 100%; box-sizing: border-box;}
+
+/* headBox*/
+  #headBox {height: 120px; background-color: #282828;}
+h1 {width: 148px; height: 115px; float: left; background-color: #fff;}
+#unb {width: 152px; height: 32px; float: right; background-image: url(../img/headBox/unb_02.png); background-repeat: no-repeat; transition: all 0.4s; background-position: top;}
+ #unb:hover {height: 100%;}
+ #unb:after {content:""; display: block; float:left; width: 10px; height: 100%; background-image: url(../img/headBox/unb_01.png); background-position: left bottom;}
+ #unb:before {content:""; display: block; float:right; width: 10px; height: 100%; background-image: url(../img/headBox/unb_03.png); background-position: right bottom;}
+ #gnb {width: 560px; height: 20px; float: left; background-color: #fa0; margin-left: 92px; margin-top: 22px;}
+
+
+
+
+
+  #lnb {height: 510px;}
+  #lnb:after {background-color: #c0c0c0; background-image: url(../img/lnb/pattern_01.png);}
+
+
+
+  .container > #addBanner {width: 100vw; height: 630px; background-color: #fac; position: relative; left: 50%; margin-left: -50vw; top: 0; box-shadow: 0 3px 3px rgba(40, 40, 40, 0.5) #282828;}
+
+  #serch {height: 90px; background-color: #c0c0c0;}
+  #infoBank {height: 270px; background-color: #f6f6f6;}
+  #fnb {height: 330px; background-color: #c0c0c0;}
+  #footBox {height: 180px; background-color: #adc; }
