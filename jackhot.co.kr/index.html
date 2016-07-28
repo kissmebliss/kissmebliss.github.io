@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="fontAwesome/font/flaticon.css">
         <title>document</title>
       <style>
         
@@ -31,9 +32,49 @@
           </ul>         
         </nav>
       </header>
-      <aside id="lnb" class="back_line">lnb</aside>
-      <section id="addBanner">addBanner</section>
-      <section id="serch" class="back_line">serch</section>
+      <aside id="lnb" class="back_line">
+        <dl class="clearfix">
+          <dt>
+            <h2>제품 홍보페이지</h2>
+          </dt>
+          <dd>promotion</dd>
+          <dd>product</dd>
+          <dd>after service</dd>
+          <dd>use test</dd>
+          <dd><abbr title="frequently asked questions">faq</abbr></dd>
+        </dl>
+      </aside>
+      <section id="addBanner">
+        <div class="btn left_btn">left</div>
+        <div class="btn rignt_btn">right</div>
+          <div class="mini_slide_banner">
+          <!-- todo: #addBanner와 동일한 구조의 내용 추가 작성할 것. -->
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>       
+          </div>
+          <ul class="full_slide_banner">
+            <li class="full_silde_list_01"></li>
+            <li class="full_silde_list_02"></li>
+            <li class="full_silde_list_03"></li>
+            <li class="full_silde_list_04"></li>
+          </ul>
+      </section>
+      <section id="search" class="back_line">
+      <form action="#" method="get">
+        <fieldset>
+          <legend class="hidden">상품 검색창</legend>
+          <label for="producktSerch" class="hidden">필요한 상품을 검색하세요.</label>
+          <input type="text" name="productSearch" id="productSearch" value="" roel="search"/>
+          <input type="button" name="searchButton" id="searchButton" value="제품검색" />
+          <label for="searchButton" class="hidden"><i class="flaticon-mabnifying-glass"></i>
+          <span class="hidden">제품검색</span></label>
+        </fieldset>
+      </form>
+      </section>
       <section id="infoBank" class="back_line">infoBank</section>
       <article id="fnb" class="back_line">fnb</article>
       <footer id="footBox" class="back_line">fooBox</footer>
