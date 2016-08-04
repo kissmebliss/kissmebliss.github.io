@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr-KO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="css/reset.css">
+        <title>transform_</title>
+        <style>
+            h1 {width: 100%; text-align: center; padding-bottom: 1rem; border-bottom: 1px solid #777; font-weight: bold; margin-bottom: 1rem;}
+            ul {width: 780px; height: 100px; margin: 0 auto; border: 3px solid #ccc; perspective: 300px;}
+            .transform li {width: 80px; height: 80px; float: left; margin: 0.5rem; text-align: center; line-height: 80px; background-color: #fa0; font-weight: bold; color: #fff; transition: transform 0.5s;}
+            
+            .transform li:nth-child(1):hover {transform: rotate(245deg); background-color: #fae;}
+            .transform li:nth-child(2) {transform: skew(-45deg); background-color: #fae;}
+            .transform li:nth-child(2)>span {transform: skew(45deg); display: block;}
+            .transform li:nth-child(3):hover {transform: scale(1.2); background-color: #2fa;}
+            .transform li:nth-child(4) {transform: translate(100px, 100px); background-color: #aaf;}
+            li:nth-child(5) {transform-origin: right top; transform: rotate(45deg); background-color: #aaf;}
+            .transform li:nth-child(6) {transform: rotateY(-45deg);}
+            li:nth-child(7) {transform: rotate(-180deg) translateY(150px);}
+            li:nth-child(8) {transform: translateY(150px) rotate(-180deg);}
+            h2 {font-size: 1.5rem; font-weight: bold; color: #333;}
+            .transition {width: 53.125rem; height: 6.25rem; margin: 10rem auto; border: 1px solid #888; }
+            .transition > ol {width: inherit; height: inherit;}
+            .transition  li {width: 5rem; height: 5rem; background-color: #d77; color: #fff; text-align: center; padding-top: 1rem; float: left; margin: 0.5rem 1.5rem; box-sizing: border-box;}
+            .transition:hover li {transform: translateY(-10rem); background-color: #6cf;}
+            .transition li:nth(1) {transition-duration: 0.5s; transition-property:  background;}
+            .transition li:nth(2) {transition-duration: 2s;}
+            .transition li:nth(3) {transition-timing-function: ease; transition-duration: 2s;} /* linear, ease, ease-in, sase-in-out */
+            .transition li:nth(4) {transition-delay: 1s; transition-duration: 2s; }
+            .transition li:nth(5) {transition: }
+            /*transition : 속성 시간 속도감 지연시간;*/
+        </style>        
+    </head>
+    <body>
+       <h1>CSS 기능 일부</h1>
+       <h1>TRANSFORM</h1>
+        <ul class="transform">
+            <li>1.rotate</li>
+            <li><span>2.skew</span></li>
+            <li>3.scale</li>
+            <li>4.translate</li>
+            <li>5.origin</li>
+            <li>6.rotate_Y</li>
+            <li>7.multi1</li>
+            <li>8.multi2</li>
+        </ul>
+        <div class="transition">
+            <ol>
+                <li>property</li><!--속성-->
+                <li>duration</li><!--시간-->
+                <li>timing-function</li><!--속도감-->
+                <li>delay</li><!--지연시간-->
+                <li>all</li><!--속성/시간/속도감/지연시간을 한꺼번에 조정.-->
+            </ol>
+        </div>        
+    </body>
+</html>

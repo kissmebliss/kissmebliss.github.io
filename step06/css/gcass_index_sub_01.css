@@ -1,0 +1,15 @@
+@import url("../css/color_setting.css");
+@import url("../css/base.css");
+/* gcass_index.css */
+
+body{background-image: url("../img/sub_01/bg01_patt.jpg");}
+	
+
+	#content{width: 730px; height: 2000px;}
+	/*#headBox{background-color:transparent;}*/
+	/*#headBox:before{background-color:transparent;}*/
+	.computer{width: 330px; height: 520px; margin-top: 125px; margin-left: 80px;
+		transition:transform 1s ease;} 
+	.computer:hover{transform:translate(200px);}
+	.computer>a{background-image: url("../img/index/main_content/computer.png");}
+	.computer>a:hover{background-image: url("../img/index/main_content/computer_on.png");}

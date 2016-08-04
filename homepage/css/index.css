@@ -1,0 +1,46 @@
+
+
+#headBox {width: 1000px; height: 140px; margin: 0 auto; padding-top: 25px; box-sizing: border-box;}
+
+h1 {width: 132px; height: 33px; float: left;}
+
+#logo {width: 133px; height: 33px; float: left;}
+#siteMap {width: 480px; height: 12px;float: right;}
+#siteMap > ul {width: 480px; height: 12px; }
+#siteMap > ul > li {height: 12px; float: left; font-size: 0.625em; box-sizing: border-box;}
+.favorit {width: 90px; margin-right: 20px; background-image: url('../img/favorite.png')}
+.cast {width: 112px; margin-right: 20px; background-image: url('../img/start_page.png')}
+.home {width: 30px; margin-right: 22px; background-image: url('../img/home.png')}
+.login {width: 30px; margin-right: 22px; background-image: url('../img/login.png')}
+.con_us {width: 65px; margin-right: 22px; background-image: url('../img/con_us.png')}
+.site_map {width: 45px; background-image: url('../img/site_map.png')}
+
+#gnb {width: 100%; height: 15px; padding-top: 43px; padding-bottom: 29px; float: left;}
+#gnb > ul > li { width:120px; font-size: 0.85em; color: #333; text-transform: uppercase; float: left; margin-right: 35px;}
+#gnb > ul > li:last-child {width: 54px; margin-right: 0; float: right; }
+
+#aside {width: 100vw; height: 600px; overflow: hidden;}
+#section {width: 1000px; margin: 0 auto;}
+ #sec_01 > * {float: left; margin-top: 50px; margin-right: 10px;}
+ #sec_02 > * {float: left; margin-top: 30px; margin-right: 10px;}
+
+
+#footMenu {width: 1000px; height: 320px; margin: 0 auto;}
+
+
+#footBox {width: 100%; height: 170px; background-color: #333; margin: 0 auto;}
+#company {width: 656px; height: 105px; margin: 0 auto; padding-top: 30px; }
+
+#company > .class {margin: 0 auto;}
+ .tel {width: 130px; height: 105px; text-align: center;}
+.fc_01 {color: #ff5300; font-weight: bold; text-align: center;}
+.fc_02 {font-size: 0.85em; color: #fff; text-align: center;}
+
+/* act */
+
+
+
+
+
+
+

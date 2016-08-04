@@ -45,9 +45,6 @@ h1 {width: 148px; height: 115px; float: left; background-color: #fff;}
  
 #gnb {width: 560px; height: 20px; float: left; background-color: #fa0; margin-left: 92px; margin-top: 22px;}
 
-
-
-
 #lnb {min-height: 510px; height: auto; box-sizing: border-box; padding: 30px 0; }
 #lnb:after {background-color: #c0c0c0; background-image: url(../img/lnb/pattern_01.png);}
   #lnb > dl{width: 100%; height: auto;}
@@ -76,10 +73,11 @@ h1 {width: 148px; height: 115px; float: left; background-color: #fff;}
   .full_slide_banner > .full_slide_list_04 {background-color: #ffe;}
 
 #search {height: 90px; background-color: #c0c0c0; padding: 1.25rem 7.5rem;}
-#search > form {width: 100%; height: 100%;}
-#search > form > fieldset {width: inherit; height: inherit;}
+#search > form, #search>form>fieldset {width: 100%; height: 100%;}
 #productSearch {width: 635px; height: 100%; border: 4px solid #282828;}
-#productButton {width: 80px; height: 100%; background-color: #282828; color: #fff; float: right;}
+#productButton {position: absolute; z-index: -1000;}
+label[for="searchButton"] {width: 80px; height: 100%; display: block; float: right; background-color: #282828; color: #fff; cursor: pointer; line-height: 50px; text-align: center; font-size: 1.5rem; font-weight: bold; padding-right: 1.5rem; box-sizing: border-box;}
+#searchButton:focus + label {outline: 3px solid #fdd414; color: #fdd414; position:relative; z-index: 1000;}
 
 /* #search input[type="text"] {width: 640px; height: 100%; border: 2px solid #333; float: rihgt;}
  #search input[type="button"] {width: 80px; height: 100%; border: 2px solid #333; margin-left: -2px;} */

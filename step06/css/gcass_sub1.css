@@ -1,0 +1,34 @@
+@import url("../css/color_setting.css");
+@import url("./base.css");
+/* gcass_index.css */
+
+body{background-image: url("../img/sub_01/bg01.jpg");}
+
+	.con_box:before{background-color:transparent;}
+	.con_box:after{background-color:transparent;}
+
+#content{width: 730px; height:2000px; float:right; padding-top: 86px;}
+		/*background-image: url(../img/index/main_content/greenbg.png);
+		background-repeat:no-repeat;	background-position:340px 50px;}*/
+
+#content > hgroup {width: 100%; height: 40px; float: right; margin-right: 60px;}
+#content > hgroup > h2 {width: auto; height: auto; overflow: visible; float: right; color: #fff; font-weight: bold; font-size: 2.5rem;}
+#content > hgroup > h3 {width: auto; height: auto; overflow: visible; float: right; margin-right: 1rem; color: #fff; font-size: 1.2rem; margin-top: 1.3rem;}
+
+.curri_01 {width: 660px; height: 550px; margin-top: 50px; margin-bottom: 50px; float: right;}
+
+.curri_01 > dl {width: 200px; height: 500px; float: left; background-color: #fff; margin-right: 30px; border-radius: 20px;}
+.curri_01 > dl:nth-child(2) {margin-top: 2rem;}
+.curri_01 > dl:last-child {margin-right: 0;}
+.curri_01 > dl > dt {width: 100%; height: 380px; border-radius: 1.25rem;}
+.curri_01 > dl > dd {width: 100%; height: auto; min-height: 6.25rem; margin-top: 1rem; border: 2px solid #fff; border-top: 0; border-bottom: 0; box-sizing: border-box;}
+.curri_02 {width: 670px; height: 315px; background-color: #acc; float: right; margin-bottom: 7rem;}
+
+
+
+
+
+
+
+
+

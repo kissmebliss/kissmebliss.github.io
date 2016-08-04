@@ -1,0 +1,140 @@
+	<load target="css/style.css" />
+<load target="css/default/default.css" />
+<load target="js/layout.js" />
+<load target="js/jquery.nivo.slider.js" />
+
+<!--@if($lang_type=='ko')-->
+{@
+	$lang->signup = '가입하기';
+	$lang->profile = '내 정보';
+	$lang->social = '소셜';
+}
+<!--@else-->
+{@
+	$lang->signup = 'Sign Up';
+	$lang->profile = 'Profile';
+	$lang->social = 'Social';
+}
+<!--@end-->
+<head>
+<title>Rusty Paradise : 빛바랜 낙원</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" target=_blank href="/favicon.ico">
+    <link rel="shortcut Icon" href="/favicon.ico">
+<style type="text/css">
+<block cond="$layout_info->layout_style=='style2'">
+#xe {width:980px;margin:0 auto;}
+</block>
+<block cond="$layout_info->side_area=='M' || $layout_info->side_area=='W' || $layout_info->side_area=='MW'">
+#container {width:980px;}
+.sidebar {position:relative;float:left;width:210px;margin-top:-10px;*zoom:1}
+#content {display:block;position:relative;float:right;width:750px;}
+</block>
+.header {height:150px;}
+#logo {padding-top:0px; width:978px; margin: 0px 0px -3px 0px !important;}
+</style>
+</head>
+
+<div id="xe">
+       <div id="logo">
+			<a href="<!--@if($layout_info->index_url)-->{$layout_info->index_url}<!--@else-->{getUrl('')}<!--@end-->"><img cond="$layout_info->logo_image" src="{$layout_info->logo_image}" alt="{$layout_info->logo_title}" /><block cond="!$layout_info->logo_image">{$layout_info->logo_title}</block></a>
+		</div>
+<div id="gnb_wrp">
+	<div>
+		<ul id="gnb" class="ul1">
+			<li loop="$global_menu->list=>$key1,$val1" cond="$val1['link']" class="li1">
+				<a class="a1<!--@if($val1['selected'])--> on1<!--@end-->" href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a>
+				<block cond="$val1['list']">
+				<ul class="ul2">
+					<li loop="$val1['list']=>$key2,$val2" cond="$val2['link']" class="li2<!--@if($val2['selected'])--> on<!--@end-->">
+						<a class="a2" href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a>
+						<ul cond="$val2['list']" class="ul3">
+							<li loop="$val2['list']=>$key3,$val3" cond="$val3['link']"><a class="a3<!--@if($val3['selected'])--> on<!--@end-->" href="{$val3['href']}" target="_blank"|cond="$val3['open_window']=='Y'">{$val3['link']}</a></li>
+						</ul>
+					</li>
+				</ul>
+				</block>
+			</li>
+		</ul>
+	 </div>
+</div>
+<div class="slider-wrapper theme-default" cond="$layout_info->nivoSlider">
+	<div id="slider" class="nivoSlider">
+		<a href="http://www.rustyparadise.com/strawberry" target="_self"><img src="img/toystory.jpg"|cond="!$layout_info->nivoSlider_img_1" src="{$layout_info->nivoSlider_img_1}"|cond="$layout_info->nivoSlider_img_1" data-thumb="img/toystory.jpg" alt="" title="{$layout_info->nivoSlider_text_1}" /></a>
+		<a href="http://www.rustyparadise.com/premium" target="_self"><img src="img/up.jpg"|cond="!$layout_info->nivoSlider_img_2" src="{$layout_info->nivoSlider_img_2}"|cond="$layout_info->nivoSlider_img_2" data-thumb="img/up.jpg" alt="" title="{$layout_info->nivoSlider_text_2}" /></a>
+		<a href="http://www.rustyparadise.com/other" target="_self"><img src="img/walle.jpg"|cond="!$layout_info->nivoSlider_img_3" src="{$layout_info->nivoSlider_img_3}"|cond="$layout_info->nivoSlider_img_3" data-thumb="img/walle.jpg" alt="" title="{$layout_info->nivoSlider_text_3}" /></a>
+		<a href="http://www.rustyparadise.com/oasis" target="_self"><img src="img/nemo.jpg"|cond="!$layout_info->nivoSlider_img_4" src="{$layout_info->nivoSlider_img_4}"|cond="$layout_info->nivoSlider_img_4" data-thumb="img/nemo.jpg" alt="" title="{$layout_info->nivoSlider_text_4}" /></a>
+	</div>
+</div>
+<!--슬라이드푸터-->
+ <div id="sf">
+   <div class="sf1"><marquee direction="right" scrollAmount="6" width="770px"><font color="pink" size="2">Welcome to RUSTY PARADISE ♡ 빛바랜 낙원에 오신 것을 환영합니다.</font></marquee></div>
+       <form method="get" action="{getUrl()}" id="search">
+			<input type="hidden" name="vid" value="{$vid}" />
+			<input type="hidden" name="mid" value="{$mid}" />
+			<input type="hidden" name="act" value="IS" />
+			<input type="text" name="is_keyword" value="{$is_keyword}" placeholder="{$lang->cmd_search}" />
+		</form>
+ </div>
+
+<div id="container" class="clear">
+	<div class="sidebar" id="snb" cond="$layout_info->side_area=='M' || $layout_info->side_area=='W' || $layout_info->side_area=='MW'">
+		<div id="lnb" cond="$layout_info->side_area=='M' || $layout_info->side_area=='MW'">
+			<!--// LNB(2차 메뉴) -->
+			<h1 loop="$global_menu->list=>$key1,$val1" cond="$val1['selected']"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a></h1>
+			<ul loop="$global_menu->list=>$key1,$val1" cond="$val1['selected'] && $val1['list']">
+				<li loop="$val1['list']=>$key2,$val2" class="active"|cond="$val2['selected']">
+					<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a>
+					<ul cond="$val2['list']">
+						<li loop="$val2['list']=>$key3,$val3" class="active"|cond="$val3['selected']"><a href="{$val3['href']}" target="_blank"|cond="$val3['open_window']=='Y'">{$val3['link']}</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="wgt" cond="$layout_info->side_area=='W' || $layout_info->side_area=='MW'">
+			{$layout_info->custom_wgt}
+			<div cond="$layout_info->d_wgt" class="section doc">
+				<h2>NOVEL UPDATE</h2>
+				<img class="zbxe_widget_output" widget="content" skin="default" content_type="document" module_srls="{$layout_info->d_wgt}" list_type="normal" markup_type="list" page_count="2" option_view="title,regdate" order_type="desc" subject_cut_size="40" />
+			</div>
+			<!--// 커멘트 위젯 -->
+			<div cond="$layout_info->c_wgt" class="section cmt">
+				<h2>NEW COMMENT</h2>
+				<img class="zbxe_widget_output" widget="content" skin="default" content_type="comment" module_srls="{$layout_info->c_wgt}" list_type="normal" markup_type="list" page_count="2" option_view="title,regdate,nickname" order_type="desc" subject_cut_size="40" />
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="content">
+		{$content}
+	</div>
+</div>
+</div>
+
+
+<div id="footer"></div>
+<div class="container"></div>
+<div id="footer_menu">
+    <div class="f_menu2"><ul><li><span class="icon1"><a href="http://www.rustyparadise.com/todaily" target="_self"><i class="fa fa-envelope-square"></i></a></span><br />MAIL</li></ul>
+   </div>
+
+   <div class="f_menu2"><ul><li><span class="icon1"><a href="http://www.twitter.com/daily714" target="_blank"><i class="fa fa-twitter"></i></a></span><br />TWITTER</li></ul>
+   </div>
+
+   <div class="f_menu1"><ul><li><span class="icon1"><a href="{getUrl('m','1')}" target="_self"><i class="fa fa-wifi"></i></a></span><br />MOBILE</li></ul>
+   </div>
+
+   <div class="f_menu1"><ul><li><span class="icon1"><a href="http://www.rustyparadise.com/check" target="_self"><i class="fa fa-check-square"></i></a></span><br />CHECK</li></ul>
+   </div>
+
+   <div class="f_menu1"><ul><li><span class="icon1"><a href="http://www.rustyparadise.com/index.php?mid=home&act=dispMemberInfo" target="_self"><i class="fa fa-user"></i></a></span><br/>INFO</li></ul>
+   </div>
+
+   <div class="f_menu1"><ul><li><span class="icon1"><a href="http://www.rustyparadise.com/home" target="_self"><i class="fa fa-home"></i></a></span><br />HOME</li></ul>
+
+   </div>
+
+   <div class="counter"><img class="zbxe_widget_output" widget="counter_status" skin="miznkiz_simple_counter" colorset="normal" /></div>
+</div>
