@@ -1,6 +1,6 @@
-/* myreset.css */
+/* my reset.css */
 a:focus, input:focus, button:focus{
-	outline:3px solid #fb0; position: relative; z-index:1000; outline-offset:0.3rem;}
+	outline:3px solid #ff6969; position: relative; z-index:1000; outline-offset:0.3rem;}
 html, body{margin: 0; padding: 0;
 	color:#333;
 	 font-family: sans-serif;
