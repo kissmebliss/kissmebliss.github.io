@@ -1,0 +1,38 @@
+body {overflow-x: hidden;}
+
+/* login bar*/
+#login_bar {width: 100vw; height: 5px; background-color: #272727;}
+#login {width: 960px; height: 100%; margin: 0 auto;}
+
+/* header */
+header {width: 960px; height: auto; margin: 0 auto;}
+nav {width: 100%; height: auto;}
+h1 > a {width: 160px; height: 50px; background-image: url('../img/index/logo.png'); background-repeat: no-repeat; float: left;}
+  .product_menu > ul {width: 800px; height: 100%; float: left; margin: 0 auto;}
+  .product_menu > li {width: auto; height: 50px; float: left; background-repeat: no-repeat;}
+  .product_menu > li:nth-child(1) {width: 77px; margin-left: 38px; background-image: url('../img/index/index_menu.png');}
+  .product_menu > li:nth-child(2) {width: 94px; margin-left: 81px; background-image: url('../img/index/index_menu.png'); background-position: -158px;}
+  .product_menu > li:nth-child(3) {width: 94px; margin-left: 79px; background-image: url('../img/index/index_menu.png'); background-position: -331px;}
+  .product_menu > li:nth-child(4) {width: 58px; margin-left: 81px; background-image: url('../img/index/index_menu.png'); background-position: -506px;}
+  .product_menu > li:nth-child(5) {width: 94px; margin-left: 79px; background-image: url('../img/index/index_menu.png'); background-position: -643px;}
+
+/* container */
+#container {width: 960px; height: auto; margin: 0 auto;}
+#content {width: 100%; height: auto; background-image: url('../img/index/article_01.png');}
+#babaraPink > a {width: 100%; height: 440px; display: block;}
+
+#section {width: 960px; height: auto; margin-top: 30px; }
+.new_item {width: 100%; height: 200px;}
+ .new_item li {width: 300px; height: 100%; float: left; margin-right: 30px;}
+ .new_item li:nth-child(1) {background-image: url('../img/index/n_item_01.png');}
+ .new_item li:nth-child(2) {background-image: url('../img/index/n_item_02.png');}
+ .new_item li:nth-child(3) {margin-right: 0; background-image: url('../img/index/n_item_03.png');}
+ 
+.new_item img {transition: transform 0.5s;}
+.new_item li:hth-child(1):hover img {transform: scale(1.5);} 
+
+/* footer */
+#footBox {width: 100%; height: 250px; background-color: #272727; margin-top: 30px;}
+.magazine {width: 960px; height: 68px; margin: 0 auto; border-bottom: 2px solid #6d6d6d;}
+  .maga_l {width: 650px; height: 100%; float: left; background-image:url('../img/index/magazine_l.png');}
+  .maga_r_form {width: 310px; height: 100%; float: left; background-color: #faa;}

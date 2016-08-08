@@ -1,0 +1,12 @@
+/* login bar*/
+#login_bar {width: 100vw; height: 5px; background-color: #272727;}
+#login {width: 960px; height: 100%; margin: 0 auto;}
+
+/* header */
+
+#headBox {width: 960px; height: auto; margin: 0 auto;}
+h1 > a {width: 160px; height: 50px;  float: left; background-image: ;}
+
+.search {width: 800px; height: 50px; float: right; background-color: #faa;}
+
+#subGnb {width: 960px; height: 50px; margin: 0 auto; background-color: #333;} 

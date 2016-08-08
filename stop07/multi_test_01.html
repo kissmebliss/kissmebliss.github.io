@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr-KO">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./css/base/reset.css">
+  <script src="./js/jquery/jquery-1.12.4.min.js"></script>
+  <script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
+  <script src="./js/jquery/jquery-ui.min.js"></script>
+  <title>Multi media_TEST</title>
+  <style>
+    .media> video {width: 720px; height: 480px;}
+  </style>        
+</head>
+  <body>
+  <h1>멀티미디어의 이해</h1>
+  <div class="sound">
+    <h2>audio 삽입</h2>
+    <div class="fir_audio">
+      <audio src="./multi/audio/exam.mp3" controls="controls"></audio>
+      <!-- 브라우저마다 컨트롤러의 모양이 다르므로 별도의 자바스크립트를 이용해 컨트롤러를 다시 만들어야 한다.-->
+    </div>    
+  </div>
+  <div class="second_audio">
+    <h2>여러 파일 삽입</h2>
+    <audio controls="controls" autoplay="autoplay">
+      <source src="multi/audio/exam2.mp3" type="audio/mp3" />
+      <source src="multi/audio/exam2.ogg" type="audio/ogg" />
+      이 브라우저에서는 오디오를 재생할 수 없습니다. 최신 브라우저를 사용하세요.     
+    </audio>
+  </div>
+  <div class="media">
+    <h2>단일 동영상 삽입</h2>
+    <video src="multi/video/piki.mp4" controls="controls" poster="http://lorempixel.com/720/480"></video>
+  </div>
+  <div class="multi_media">
+    <h2>멀티 동영상 삽입</h2>
+    <video controls="controls" poster="http://lorempixel.com/500/300/cat">
+      <source src="multi/video/piki.mp4" type="video/mp4" />
+      동영상을 지원하지 않은 브라우저입니다. 최신 브라우저를 사용하세요.
+    </video>
+  </div>
+  </body>
+</html>
